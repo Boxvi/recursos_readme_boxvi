@@ -1,0 +1,128 @@
+<style>
+    .post-footer,
+    .comments,
+    .feed-links,
+    .blog-pager,
+    .widget.Attribution {
+        display: none;
+    }
+</style>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="max-w-3xl bg-white shadow-lg rounded-2xl p-8 text-center">
+        <h1 class="text-4xl font-bold text-indigo-600">SEASON ONE!</h1>
+
+        <div class="mb-4">
+            <button onclick="toggleContent('week1')"
+                class="w-full text-left bg-indigo-500 text-white px-4 py-3 rounded-lg hover:bg-indigo-600 transition">
+                📅 02 of March, 2025
+            </button>
+            <div id="week1" class="hidden mt-2 p-4 bg-indigo-100 rounded-lg">
+                <h2 class="text-lg font-semibold text-indigo-700">🚀 Progress</h2>
+                <ul class="list-none">
+
+                    <li>
+                        <p class="w-full text-left text-indigo-900 font-semibold hover:underline">
+                            ✅ This week, I created a blog and organizated for watch beautiful.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="w-full text-left text-indigo-900 font-semibold hover:underline">
+                            ✅ I am working on an ecommerce for me, and a domain is establish store.boxvisoft.com
+                        </p>
+                    </li>
+
+                    <li>
+
+                        <button
+                            onclick="window.location.href = 'https://' + window.location.hostname + '/p/information.html?o=places&n=2'"
+                            class="w-full text-left text-indigo-900 font-semibold hover:underline">
+                            ✅ VISIT THE "JARDIN BOTANICO" (click-me)
+                        </button>
+                    </li>
+
+                </ul>
+                <h2 class="text-lg font-semibold text-indigo-700 mt-4">💭 Reflections for the week</h2>
+
+                <p class="w-full text-left text-indigo-900 font-semibold">
+                    👉 Every day can you a best person,
+                </p>
+
+                <p class="w-full text-left text-indigo-900 font-semibold">
+                    👉 One change in to diary habits, can you trasform in a best person for you.
+                </p>
+
+                <p class="w-full text-left text-indigo-900 font-semibold">
+                    👉 Thank you for everyday
+                </p>
+
+                <p class="w-full text-left text-indigo-900 font-semibold">
+                    👉 Trust at the process, is a big help
+                </p>
+
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <button onclick="toggleContent('week2')"
+                class="w-full text-left bg-pink-500 text-white px-4 py-3 rounded-lg hover:bg-pink-600 transition">
+                📅 09 of March, 2025
+            </button>
+
+            <div id="week2" class="hidden mt-2 p-4 bg-pink-100 rounded-lg">
+                <h2 class="text-lg font-semibold text-pink-700">🚀 Progress</h2>
+                <ul class="list-none">
+
+                    <li>
+                        <p class="w-full text-left text-indigo-900 font-semibold hover:underline">
+                            ✅ I am finished the read book "deja de ser tu"
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="w-full text-left text-indigo-900 font-semibold hover:underline">
+                            ✅ The ecommerce has finish on deploy, i can modify the plataform
+                        </p>
+                    </li>
+
+                    <li>
+                        <button
+                            onclick="window.location.href = 'https://' + window.location.hostname + '/p/information.html?o=learn&n=2'"
+                            class="w-full text-left text-pink-900 font-semibold hover:underline">
+                            ✅ LEARN GASFINTERIA 🚿 (click-me)
+                        </button>
+                    </li>
+
+                    <li>
+                        <button
+                            onclick="window.location.href = 'https://' + window.location.hostname + '/p/information.html?o=learn&n=3'"
+                            class="w-full text-left text-pink-900 font-semibold hover:underline">
+                            ✅ LEARN TO RIDE A BIKE 🚲 (click-me)
+                        </button>
+                    </li>
+
+                </ul>
+
+                <h2 class="text-lg font-semibold text-pink-700 mt-4">💭 Reflections for the week</h2>
+                <p class="w-full text-left text-pink-900 font-semibold">
+                    👉 You did not seek out of necessity, you felt well
+                </p>
+                <p class="w-full text-left text-pink-900 font-semibold">
+                    👉 The blows can you help everyday
+                </p>
+                <p class="w-full text-left text-pink-900 font-semibold">
+                    👉 Even if you are tired you can always be better
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.classList.toggle("hidden");
+        }
+    </script>
+</body>
